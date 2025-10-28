@@ -16,7 +16,7 @@ animals.map((a, i) => console.log(\`\${a} says \${sounds[i]}\`));`,
   },
   {
     title: "🧩 Object Destructuring",
-    code: `const user = { name: "형준", lang: "JavaScript", level: "🔥 Master" };
+    code: `const user = { name: "Aodwns", lang: "JavaScript", level: "🔥 Master" };
 const { name, lang, level } = user;
 console.log(\`Hello \${name}! Welcome to \${lang}. Level: \${level}\`);`,
   },
@@ -66,7 +66,7 @@ fetchData().then(console.log);`,
     title: "🎯 Array.filter()",
     code: `const scores = [89, 42, 77, 100, 61];
 const passed = scores.filter(s => s >= 60);
-console.log("✅ Passed:", passed);`,
+console.log("Passed:", passed);`,
   },
   {
     title: "🪄 Closure Magic",
