@@ -1,6 +1,6 @@
-// src/app/layout.tsx
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 
 export default function RootLayout({
   children,
@@ -9,11 +9,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="flex min-h-screen bg-[#0e1117] text-gray-200">
+      <body className="flex min-h-screen bg-[#0e1117] text-[#e6edf3] font-sans">
         <Sidebar />
-        <main className="flex-1 p-6 overflow-y-auto bg-[#0e1117]">
-          {children}
-        </main>
+        <div className="flex flex-col flex-1 min-w-0">
+          <Header />
+          <main className="flex-1 overflow-y-auto min-w-0 p-6">{children}</main>
+        </div>
       </body>
     </html>
   );

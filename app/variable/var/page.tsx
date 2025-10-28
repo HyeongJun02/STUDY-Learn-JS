@@ -19,9 +19,9 @@ export default function VarPage() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">var 키워드</h1>
       <p className="text-gray-400 leading-relaxed">
-        <code>var</code>는 ES6 이전부터 사용되던 변수 선언 방식으로, **함수
-        스코프(function scope)**를 가집니다. 호이스팅(hoisting)으로 인해 선언
-        전에 접근이 가능하지만, 이는 혼란을 유발할 수 있습니다.
+        <code>var</code>는 ES6 이전부터 사용되던 변수 선언 방식으로,{" "}
+        <b>함수 스코프(function scope)</b>를 가집니다. 호이스팅(hoisting)으로
+        인해 선언 전에 접근이 가능하지만, 이는 혼란을 유발할 수 있습니다.
       </p>
 
       <ul className="list-disc ml-6 text-gray-400">

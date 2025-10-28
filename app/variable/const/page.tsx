@@ -19,7 +19,7 @@ export default function ConstPage() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">const 키워드</h1>
       <p className="text-gray-400 leading-relaxed">
-        <code>const</code>는 **상수(constant)**를 선언할 때 사용하며, 선언 시
+        <code>const</code>는 <b>상수(constant)</b>를 선언할 때 사용하며, 선언 시
         반드시 초기화해야 합니다. 재할당이 불가능하지만, 객체나 배열의 내부
         내용은 변경할 수 있습니다.
       </p>

@@ -19,7 +19,7 @@ export default function LetPage() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">let 키워드</h1>
       <p className="text-gray-400 leading-relaxed">
-        <code>let</code>은 **블록 스코프(block scope)**를 가지며, 같은 블록
+        <code>let</code>은 <b>블록 스코프(block scope)</b>를 가지며, 같은 블록
         안에서 중복 선언이 불가능합니다. 하지만 재할당은 가능합니다.
       </p>
 

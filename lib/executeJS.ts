@@ -1,13 +1,29 @@
-// src/lib/executeJS.ts
 export default function executeJS(code: string) {
+  let output = "";
+  const originalLog = console.log;
+
+  console.log = (...args) => {
+    const formatted = args
+      .map((a) => {
+        if (typeof a === "object") {
+          try {
+            return JSON.stringify(a, null, 2); // pretty-print
+          } catch {
+            return "[Circular Object]";
+          }
+        }
+        return String(a);
+      })
+      .join(" ");
+    output += formatted + "\n";
+  };
+
   try {
-    const consoleLogs: string[] = [];
-    const originalLog = console.log;
-    console.log = (...args) => consoleLogs.push(args.join(" "));
-    new Function(code)();
-    console.log = originalLog;
-    return consoleLogs.join("\n") || "(no output)";
-  } catch (err: any) {
-    return `Error: ${err.message}`;
+    eval(code);
+  } catch (e: any) {
+    output += "❌ Error: " + e.message + "\n";
   }
+
+  console.log = originalLog;
+  return output;
 }

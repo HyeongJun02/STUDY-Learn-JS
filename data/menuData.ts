@@ -6,7 +6,7 @@ const menuData = [
   },
   {
     title: "Array",
-    items: ["reverse", "split", "map", "filter", "reduce"],
+    items: ["reverse", "split", "map", "filter", "reduce", "sort"],
   },
 ];
 
