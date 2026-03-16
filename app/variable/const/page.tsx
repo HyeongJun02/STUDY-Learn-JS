@@ -13,7 +13,10 @@ export default function ConstPage() {
   );
   const [output, setOutput] = useState("");
 
-  const runCode = () => setOutput(executeJS(code));
+  const runCode = async () => {
+    const result = await executeJS(code);
+    setOutput(result);
+  };
 
   return (
     <div className="flex flex-col gap-4">
