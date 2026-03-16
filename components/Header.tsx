@@ -39,8 +39,8 @@ export default function Header({ onMenuClick, onSearchClick }: HeaderProps) {
             <Link href="/" className="hover:text-[#58a6ff] transition">
               Playground
             </Link>
-            <Link href="/docs" className="hover:text-[#58a6ff] transition">
-              Docs
+            <Link href="/regex" className="hover:text-[#58a6ff] transition">
+              Regular Expression
             </Link>
             <Link href="/about" className="hover:text-[#58a6ff] transition">
               About

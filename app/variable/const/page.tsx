@@ -9,7 +9,7 @@ const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
 
 export default function ConstPage() {
   const [code, setCode] = useState(
-    `const PI = 3.14;\nconsole.log(PI);\n// PI = 3.1415; // ❌ TypeError 발생`
+    `const PI = 3.14;\nconsole.log(PI);\n// PI = 3.1415; // ❌ TypeError 발생`,
   );
   const [output, setOutput] = useState("");
 
